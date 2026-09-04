@@ -1,0 +1,74 @@
+html.acs-classic-2008 {
+  --acs-classic-ink: #171717;
+  --acs-classic-link: #1b4f8a;
+  --acs-classic-paper: #fffdf7;
+  --acs-classic-rule: #b9b4a8;
+  background: #e8e5dc !important;
+}
+html.acs-classic-2008 body { background: var(--acs-classic-paper) !important; color: var(--acs-classic-ink) !important; }
+html.acs-classic-2008 main,
+html.acs-classic-2008 article,
+html.acs-classic-2008 .article-content {
+  max-width: 820px !important; margin-left: auto !important; margin-right: auto !important;
+  font-family: Georgia, 'Times New Roman', serif !important; font-size: 18px !important;
+  line-height: 1.58 !important;
+}
+html.acs-classic-2008 h1,
+html.acs-classic-2008 h2,
+html.acs-classic-2008 h3 { font-family: Arial, Helvetica, sans-serif !important; color: #111 !important; }
+html.acs-classic-2008 h2 { border-bottom: 1px solid var(--acs-classic-rule) !important; padding-bottom: .25rem !important; }
+html.acs-classic-2008 a { color: var(--acs-classic-link) !important; }
+html.acs-classic-2008 .acs-classic-hide { display: none !important; }
+html.acs-classic-2008 .acs-classic-pdf {
+  display: inline-block !important; padding: .75rem 1.15rem !important; margin: .5rem 0 1rem !important;
+  background: #8e1f16 !important; color: white !important; border: 2px solid #56120d !important;
+  border-radius: 2px !important; font: bold 18px Arial, sans-serif !important; text-decoration: none !important;
+}
+html.acs-classic-2008 figure { max-width: 100% !important; }
+html.acs-classic-2008 img { max-width: 100% !important; height: auto !important; }
+html.acs-classic-2008 .acs-classic-intro {
+  display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 24px; align-items: start;
+}
+html.acs-classic-2008 .acs-classic-visual {
+  margin: 0 !important; padding: 10px !important; background: #fffdf7 !important;
+  border: 1px solid var(--acs-classic-rule) !important;
+}
+html.acs-classic-2008 .acs-classic-visual img { display: block; width: 100%; height: auto; }
+@media (max-width: 760px) { html.acs-classic-2008 .acs-classic-intro { display: block; } html.acs-classic-2008 .acs-classic-visual { margin-top: 16px !important; } }
+html.acs-classic-2008 .al-article-box.acs-classic-list-card {
+  max-width: 1240px !important; margin: 0 auto 20px !important; padding: 18px 22px !important;
+  border: 1px solid var(--acs-classic-rule) !important; background: var(--acs-classic-paper) !important;
+}
+html.acs-classic-2008 .article-list-resources,
+html.acs-classic-2008 .al-article-list-group { max-width: 1280px !important; }
+html.acs-classic-2008 .al-article-box .al-article-items { max-width: none !important; width: auto !important; }
+html.acs-classic-2008 #main .master-main.row { width: 100% !important; max-width: none !important; }
+html.acs-classic-2008 #main .content-main_content,
+html.acs-classic-2008 #main .page-column-wrap,
+html.acs-classic-2008 #main .issue-browse_content,
+html.acs-classic-2008 #main #ContentColumn {
+  width: calc(100vw - 48px) !important; max-width: none !important; flex: 0 0 auto !important;
+  box-sizing: border-box !important; margin-left: auto !important; margin-right: auto !important;
+}
+/* ACS positions AJAX Abstract responses as overlays; restore normal document flow. */
+html.acs-classic-2008 .al-article-box.acs-classic-abstract-ready .abstract-response-placeholder:not(.hide) {
+  position: static !important; inset: auto !important; float: none !important;
+  display: block !important; width: auto !important; height: auto !important; min-height: 0 !important;
+  margin: 14px 0 0 !important; padding: 14px 16px !important; overflow: visible !important;
+  background: #fffdf7 !important; border: 1px solid var(--acs-classic-rule) !important;
+}
+html.acs-classic-2008 .al-article-box.acs-classic-abstract-ready .al-article-items,
+html.acs-classic-2008 .al-article-box.acs-classic-abstract-ready .badge-bar {
+  height: auto !important; min-height: 0 !important; overflow: visible !important;
+}
+html.acs-classic-2008 .al-article-box.acs-classic-list-with-visual {
+  display: grid !important; grid-template-columns: minmax(0, 1fr) 280px !important; gap: 28px !important;
+}
+html.acs-classic-2008 .acs-classic-list-visual {
+  grid-column: 2; grid-row: 1; align-self: start; padding: 10px; border: 1px solid var(--acs-classic-rule);
+  background: #fffdf7; font: bold 11px Arial, sans-serif; color: #555;
+}
+html.acs-classic-2008 .acs-classic-list-visual figure,
+html.acs-classic-2008 .acs-classic-list-visual [class*="visual"] { margin: 8px 0 0 !important; }
+html.acs-classic-2008 .acs-classic-list-visual img { display: block; width: 100%; height: auto; }
+@media (max-width: 760px) { html.acs-classic-2008 .al-article-box.acs-classic-list-with-visual { display: block !important; } html.acs-classic-2008 .acs-classic-list-visual { margin-top: 16px; } }
