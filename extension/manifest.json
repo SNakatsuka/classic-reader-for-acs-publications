@@ -1,14 +1,19 @@
 {
   "manifest_version": 3,
-  "name": "ACS Classic 2008 Mode",
-  "version": "0.7.2",
-  "description": "ACS 論文ページを、読みやすいクラシック表示に整えます。",
-  "permissions": ["storage", "activeTab"],
-  "action": { "default_title": "ACS Classic 2008 Mode", "default_popup": "popup.html" },
-  "content_scripts": [{
-    "matches": ["https://pubs.acs.org/*"],
-    "js": ["content.js"],
-    "css": ["classic.css"],
-    "run_at": "document_idle"
-  }]
+  "name": "Classic Reader for ACS Publications",
+  "version": "0.1.0",
+  "description": "Unofficial readability improvements for ACS Publications pages.",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Classic Reader",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://pubs.acs.org/*"],
+      "js": ["content.js"],
+      "css": ["classic.css"],
+      "run_at": "document_idle"
+    }
+  ]
 }
