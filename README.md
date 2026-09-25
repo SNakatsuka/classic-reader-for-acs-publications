@@ -1,27 +1,29 @@
-# classic-reader-for-acs-publications
-Unofficial browser extension that improves readability of ACS Publications pages.
+# ACS Classic 2008 Mode
 
-## What it does
+ACS Publications（`pubs.acs.org`）の論文ページを読みやすく整える Chrome 拡張の試作版です。
 
-- Improves the layout of ACS Publications pages in the browser
-- Keeps reading controls and PDF links easy to access
-- Does not download, store, or redistribute article content
+現在は `Latest Articles`、検索結果、個別論文ページを対象にしています。
 
-## Installation
+## できること
 
-1. Download the ZIP from Releases
-2. Extract it
-3. Open `chrome://extensions`
-4. Enable Developer mode
-5. Select “Load unpacked”
-6. Choose the extracted `extension` folder
+- 右サイドバー、広告、関連・推薦コンテンツを非表示
+- Abstract を本文の先頭へ移動
+- 本文の折りたたみ状態は維持し、Visual Abstract だけを Abstract の横に表示
+- Visual Abstract は遅延デコード・低優先度読み込み
+- Latest Articlesでは、Abstractを手で開くとACS本来のVisual Abstractをそのまま表示する
+- Latest Articles／検索結果では、タイトル・著者・書誌情報の右側にVisual Abstractを表示（ACS標準のGraphical Abstract画像を利用。図がない論文は1列表示）
+- PDF リンクを目立つボタンに変更
+- 論文本文を固定幅・セリフ体で表示
+- ツールバーからオン／オフを切替（状態を保存）
 
-## Limitations
+## インストール
 
-- ACS page markup may change
-- Some article types may not provide a Visual Abstract
-- This is an unofficial project
+1. `chrome://extensions` を開く
+2. 右上の「デベロッパー モード」をオンにする
+3. 「パッケージ化されていない拡張機能を読み込む」を選ぶ
+4. この `acs-classic-2008` フォルダを選ぶ
 
-## Disclaimer
+## 注意
 
-This project is not affiliated with, endorsed by, or sponsored by ACS.
+- ACS 側の HTML 構造変更により、特定ページで一部セレクタを追加調整することがあります。
+- ページ内容の取得・保存・外部送信は行いません。表示だけを変更します。
